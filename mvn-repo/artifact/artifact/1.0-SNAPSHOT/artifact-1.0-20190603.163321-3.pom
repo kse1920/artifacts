@@ -17,7 +17,7 @@
         <repository>
             <id>internal.repo</id>
             <name>Temporary Staging Repository</name>
-            <url>file://C:/Users/ksenia.ilina/IdeaProjects/artifacts/mvn-repo1</url>
+            <url>file://C:/Users/ksenia.ilina/IdeaProjects/artifacts/mvn-repo</url>
         </repository>
     </distributionManagement>
 
@@ -27,7 +27,7 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.1</version>
                 <configuration>
-                    <altDeploymentRepository>internal.repo::default::file://C:/Users/ksenia.ilina/IdeaProjects/artifacts/mvn-repo1</altDeploymentRepository>
+                    <altDeploymentRepository>internal.repo::default::file://C:/Users/ksenia.ilina/IdeaProjects/artifacts/mvn-repo</altDeploymentRepository>
                 </configuration>
             </plugin>
 
@@ -38,8 +38,8 @@
                 <configuration>
                     <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
                     <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-                    <outputDirectory>C:/Users/ksenia.ilina/IdeaProjects/artifacts/mvn-repo1</outputDirectory> <!-- matches distribution management repository url above -->
-                    <branch>refs/heads/mvn-repo1</branch>                       <!-- remote branch name -->
+                    <outputDirectory>C:/Users/ksenia.ilina/IdeaProjects/artifacts/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
+                    <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
                     <includes><include>**/*</include></includes>
                     <repositoryName>artifacts</repositoryName>      <!-- github repo name -->
                     <repositoryOwner>kse1920</repositoryOwner>    <!-- github username  -->

@@ -43,6 +43,7 @@
                     <includes><include>**/*</include></includes>
                     <repositoryName>artifacts</repositoryName>      <!-- github repo name -->
                     <repositoryOwner>kse1920</repositoryOwner>    <!-- github username  -->
+                    <userName>kse1920</userName>
                 </configuration>
                 <executions>
                     <!-- run site-maven-plugin 'site' target as part of the build normal 'deploy' phase -->
