@@ -12,5 +12,5 @@ changeBuildType(RelativeId("Build")) {
     check(description == "") {
         "Unexpected description: '$description'"
     }
-    description = "dsdsd"
+    description = "dsdsd233"
 }
