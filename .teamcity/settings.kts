@@ -41,7 +41,6 @@ object Build : BuildType({
     }
 
     steps {
-        order="maven,script,ideaInspections"
         maven {
             id = "RUNNER_1"
             goals = "clean test"
