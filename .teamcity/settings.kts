@@ -40,7 +40,7 @@ object Build : BuildType({
         root(DslContext.settingsRoot)
     }
 
-    steps {
+    steps order="maven,script,ideaInspections" {
         maven {
             goals = "clean test"
             pomLocation = "artifact/pom.xml"
