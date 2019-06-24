@@ -12,15 +12,13 @@ To apply the patch, create a buildType with id = 'Build1'
 in the root project, and delete the patch script.
 */
 create(DslContext.projectId, BuildType({
+    templates(AbsoluteId("TestTemplate"))
     id("Build1")
     name = "Build (1)"
 
-    vcs {
-        root(AbsoluteId("TEstVCS"))
-    }
-
     steps {
         maven {
+            id = "RUNNER_54"
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
         }
@@ -28,6 +26,7 @@ create(DslContext.projectId, BuildType({
 
     triggers {
         vcs {
+            id = "vcsTrigger"
         }
     }
 }))
