@@ -21,13 +21,13 @@ create(DslContext.projectId, BuildType({
 
     steps {
         script {
+            scriptContent = """echo "bye""""
+        }
+        script {
             scriptContent = """echo "hello""""
         }
         script {
             scriptContent = """echo "blbablba""""
-        }
-        script {
-            scriptContent = """echo "bye""""
         }
     }
 
